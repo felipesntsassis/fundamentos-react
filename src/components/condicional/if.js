@@ -1,5 +1,5 @@
 /**
- * <If teste={exp}>
+ * <If test={exp}>
  *     <span>...</span>
  *     <span>...</span>
  *     <span>...</span>
@@ -7,5 +7,21 @@
  */
 
 export default props => {
-    return props.teste ? props.children : false;
+    const elseChild = props.children.filter(child => {
+        return child.type && child.type.name === 'Else';
+    })[0];
+    const ifChildren = props.children.filter((child) => {
+		return child !== elseChild;
+    });
+    
+
+    if (props.test) {
+        return ifChildren;
+    } else if (elseChild) {
+        return elseChild;
+    } else {
+        return false;
+    }
 }
+
+export const Else = props => props.children;
