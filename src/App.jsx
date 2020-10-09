@@ -16,10 +16,10 @@ export default _ => (
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
-            <Card titulo="#06.1 - Repetição - tabela de Produtos" color="#00C8F8">
+            <Card titulo="#07 - Desafio Repetição" color="#1abc9c">
                 <TabelaProdutos />
             </Card>
-            <Card titulo="#06 - Repetição" color="#00C8F8">
+            <Card titulo="#06 - Repetição" color="#9b59b6">
                 <ListaAlunos />
             </Card>
             <Card titulo="#05 - Componente com Filhos" color="#00C8F8">

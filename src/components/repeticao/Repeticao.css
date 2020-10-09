@@ -1,0 +1,31 @@
+:root {
+    --torqouise: #1abc9c;
+    --torqouise-rgba:rgba(26, 188, 156,.05);
+    --white: #fff;
+}
+
+table {
+    width: 100%;
+    border: 1px solid var(--torqouise);
+}
+
+table thead tr {
+    background: var(--torqouise);
+    color: var(--white);
+}
+
+table thead tr th {
+    border: none;
+}
+
+table tbody tr {
+    background: var(--torqouise-rgba);
+}
+
+table tbody tr:nth-last-of-type(odd) {
+    background: rgba(var(--white));
+}
+
+table tbody tr td {
+    color: var(--torqouise);
+}
