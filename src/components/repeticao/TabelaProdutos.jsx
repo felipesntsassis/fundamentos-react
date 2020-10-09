@@ -1,7 +1,7 @@
 import React from 'react';
 
 import produtos from '../../data/produtos';
-import './Repeticao.css';
+import './TabelaProdutos.css';
 
 export default props => {
     function getRows() {
@@ -10,7 +10,7 @@ export default props => {
                 <tr key={produto.id}>
                     <td>{produto.id}</td>
                     <td>{produto.nome}</td>
-                    <td>{produto.preco}</td>
+                    <td>R$ {produto.preco.toFixed(2).replace('.', ',')}</td>
                 </tr>
             );
         });
@@ -18,7 +18,7 @@ export default props => {
 
     return (
         <div>
-            <table>
+            <table className="TabelaDeProdutos">
                 <thead>
                     <tr>
                         <th>ID</th>
