@@ -8,6 +8,7 @@ import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
 
 import ParOuImpar from "./components/condicional/ParOuImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
 
 import Card from './components/layout/Card';
 import ListaAlunos from "./components/repeticao/ListaAlunos";
@@ -22,6 +23,8 @@ export default _ => (
         <div className="Cards">
             <Card titulo="#08 - Renderização Condicional" color="#1abc9c">
                 <ParOuImpar numero={20} />
+                <UsuarioInfo usuario={{nome: 'Felipe'}} />
+                <UsuarioInfo usuario={{email: 'felipesntsassis@gmail.com'}} />
             </Card>
             <Card titulo="#07 - Desafio Repetição" color="#1abc9c">
                 <TabelaProdutos />
