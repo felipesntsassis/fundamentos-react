@@ -7,6 +7,8 @@ import Fragmento from "./components/basicos/Fragmento";
 import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
 import Card from './components/layout/Card';
+import ListaAlunos from "./components/repeticao/ListaAlunos";
+import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 
 import './App.css';
 
@@ -14,6 +16,12 @@ export default _ => (
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+            <Card titulo="#06.1 - Repetição - tabela de Produtos" color="#00C8F8">
+                <TabelaProdutos />
+            </Card>
+            <Card titulo="#06 - Repetição" color="#00C8F8">
+                <ListaAlunos />
+            </Card>
             <Card titulo="#05 - Componente com Filhos" color="#00C8F8">
                 <Familia sobrenome="Silva">
                     <FamiliaMembro nome="Pedro" />
