@@ -1,12 +1,14 @@
 :root {
     --torqouise: #1abc9c;
-    --torqouise-rgba:rgba(26, 188, 156,.05);
+    --torqouise-rgba:rgba(26, 188, 156,.10);
     --white: #fff;
 }
 
 table {
     width: 100%;
     border: 1px solid var(--torqouise);
+    border-radius: 4px;
+    padding: 5px;
 }
 
 table thead tr {
