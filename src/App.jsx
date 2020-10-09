@@ -7,6 +7,9 @@ import Fragmento from "./components/basicos/Fragmento";
 import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
 
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai.jsx";
+
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 
@@ -21,6 +24,12 @@ export default _ => (
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+            <Card titulo="#10 - Comunicação Indireta" color="#f39c12">
+                <IndiretaPai />
+            </Card>
+            <Card titulo="#09 - Comunicação Direta" color="#2c3e50">
+                <DiretaPai />
+            </Card>
             <Card titulo="#08 - Renderização Condicional" color="#1abc9c">
                 <ParOuImpar numero={20} />
                 <UsuarioInfo usuario={{nome: 'Felipe'}} />
