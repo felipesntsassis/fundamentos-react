@@ -29,7 +29,7 @@ export default _ => (
         <h1>Fundamentos React</h1>
         <div className="Cards">
             <Card titulo="#12 - Contador" color="#c0392b">
-                <Contador numeroInicial={10} />
+                <Contador numeroInicial={300} />
             </Card>
             <Card titulo="#11 - Componente Controlado (Input)" color="#7f8c8d">
                 <Input />
