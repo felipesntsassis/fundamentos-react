@@ -18,6 +18,9 @@ import Contador from "./components/contador/Contador";
 import Input from './components/formulario/Input';
 
 import Card from './components/layout/Card';
+
+import Mega from './components/mega/Mega';
+
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 
@@ -28,6 +31,9 @@ export default _ => (
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+            <Card titulo="#13 - Desafio Mega Sena" color="#2ecc71">
+                <Mega />
+            </Card>
             <Card titulo="#12 - Contador" color="#c0392b">
                 <Contador numeroInicial={300} />
             </Card>
